@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learn Flexbox: Create layout with header, content, and footer.</title>
+
+  <style>
+    body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+body {
+  /* (1) Verwenden Sie display und flex-direction */
+display:flex;
+flex-direction:column;
+  background: radial-gradient(blue, white);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+.header,
+.footer {
+  height: 50px;
+  color: #ffffff;
+  background-color: #2487c680;
+  }
+
+
+.content {
+  /* (2) Verwenden Sie flex-grow  */
+  flex-grow:1;
+  padding-top: 15px;
+  padding-left:15px;
+  padding-right:15px;
+  margin-left: 35px;
+  margin-right: 35px;
+  max-width: 700px;
+  align-self: center;  
+  background-color: white;
+  font-size: 0.8rem;
+}
+.forms {
+  background-color: #4a6cff;
+  border-radius: 15px;
+  padding: 1rem;
+  border: 2px solid #2f4fd1;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forms:hover {
+  transform: translateY(-1px);
+}
+
+button{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 6px;
+}
+button:hover {
+  transform: translateY(-2.5px);
+}
+
+h2{
+  color:white;
+  text-align:center;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+  </style>
+
+  
+</head>
+<body>
+  <!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Learn Flexbox</title>
+  </head>
+
+  <body>
+    <div class="header">header</div>
+
+    <div class="content">
+         <div class="forms">        
+    <h2 class="formtitle">Login</h2>
+        <input type="text" placeholder="Nutzername"><br>
+        <input type="text" placeholder="Passwort"><br>
+        <button type="submit">Einloggen</button></div><br><br>
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+    <div class="footer">footer</div>
+  </body>
+
+</html>
+
+
+  <script>
+    
+  </script>
+</body>
+</html>
